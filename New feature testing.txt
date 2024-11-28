@@ -1,0 +1,43 @@
+### Testing New Features
+
+This section outlines the QA sub-tasks, details the execution of crucial development test cases, and lists the criteria for accepting new features. The following topics are covered:
+
+#### QA-related Sub-Tasks
+
+This section explains the QA sub-tasks and covers the following areas:
+
+#### QA Review Tasks
+
+QA review is an integral part of the requirements review process, where QA ensures that the business idea and the scope of testing and approach are clear.
+
+Requirements analysis is vital for the success or failure of a system or software project. Requirements must be well-documented, complete, consistent, clear, measurable, testable, traceable, actionable, and relevant to identified business needs or opportunities, with sufficient detail for system design.
+
+QA Review sub-tasks are used to track the progress of the requirements review from the QA perspective. This review is conducted in the previous sprint for features planned in the current sprint. The process includes:
+
+- During the QA review for a new feature or improvement, a responsible QA team member revises the requirements and data sets before implementation and test design begin.
+- The QA team member verifies if the new feature is testable and executable.
+- Any unclear points are clarified at this stage.
+- If questions arise during the QA review, the QA Review sub-task should be assigned to the Business Analyst (BA) or Product Owner (PO), with the questions listed, and the task status set to Rejected (or Paused).
+- All answered or clarified questions are added as comments or attachments in the QA Review JIRA ticket for historical purposes.
+- If no issues are found, the QA reviewer sets the task status to Approved and then Closed.
+- After successfully completing the QA review, the QA reviewer creates tasks for test design and test execution. The QA reviewer can also include a checklist in the completed QA Review sub-task for future test cases.
+- If previously uncovered issues are found during test design or execution, the QA review task should be reopened and assigned to the BA/PO.
+
+If any requirement from the review checklist is not met, it can lead to the failure of the QA Review task. For more details on the review checklist, see the Requirements Review Checklist.
+
+### Requirements Review Checklist
+
+| No. | Criteria | Passed? | Comment |
+| --- | -------- | ------- | ------- |
+| 1 | Ticket summary clearly defines the scope, including the summary name, scope summary properties, and notes in the description. | (/) | |
+| 2 | Ticket summary lists all artifacts affected by the changes introduced in a new feature or improvement. | (/) | |
+| 3 | Artifacts traced in a ticket summary are located in the same project of the current release. | (/) | |
+| 4 | Traces from artifacts to other artifacts are correct, with no broken traces. | (/) | |
+| 5 | Scope and changes are consistent throughout artifacts. | (/) | |
+| 6 | Same data elements are traced in use cases, mock-ups, and rules. | (/) | |
+| 7 | No necessary information is missing from an artifact, and there are no placeholders or tasks to be done. | (/) | |
+| 8 | Each requirement is written in clear, concise, and unambiguous language, understandable to those outside the domain. | (/) | |
+| 9 | Each requirement is free from content and grammar errors. | (/) | |
+| 10 | Expected behavior is clear and documented for all use case flows. | (/) | |
+| 11 | Exact error messages are specified. | (x) | Please specify error messages for case X |
+| 12 | There are no visible obstacles for requirements implementation within known system constraints. | (/) | |
