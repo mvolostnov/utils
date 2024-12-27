@@ -1,0 +1,42 @@
+Testing Strategy
+This section outlines the testing strategy used for all DATA API software development projects. The strategy incorporates the experience gained from successfully delivering numerous mid-term and long-term software development projects of high complexity. The DATA API Testing Strategy covers various topics, such as the approach to testing new features, management of test cases and defects, as well as smoke and regression testing, including both manual and automated methods. This strategy is built on widely accepted best testing practices adapted to DATA API projects. The goal of the strategy is not only to produce high-quality software with minimized testing cycles but also to foster a culture of high-quality code within the development department.
+
+
++++++++++++++++
+
+Test Design Tasks >> 
+A test design sub-task is used to track progress on the creation of test cases for a new feature or improvement. A test design task must go through the review process as described in the Test Design Review. It is recommended to assign a test design task to a QA team member who performed the QA review for this new feature or improvement. A test design task is closed when all scenarios that cover the relevant new feature or improvement are created in the test case JIRA project and have successfully passed the review process.
+
+
+++++++++++++++++++++=
+Test Execution Tasks >>
+
+The sub-task for test execution is used to track progress on testing a new feature or improvement. QA begins test execution as soon as the feature or improvement is ready for testing.
+
+If test execution fails, the QA engineer proceeds as follows:
+
+Reports the bugs.
+Fails the test cases.
+Adds the test results to the new feature and test case comments using a template.
+Leaves the test execution task in "In Progress" status.
+Adjusts the remaining time in the test execution sub-task.
+If test execution passes, the QA engineer proceeds as follows:
+
+Adds the test results to the new feature and test case comments using a template.
+Closes the test execution task
+
+
++++++++++++++++++++++++
+
+New Features Acceptance Test Criteria >>
+
+Completion criteria are essential for communication and ensuring that development has finished all planned tasks. A new feature is considered complete when all its deliverables meet the completion criteria, including finalized requirements, development, testing, and resolution of major or higher priority defects.
+
+A new feature is considered complete and is passed to the central build when the following criteria are met:
+
+All items defined as completion criteria in the JIRA ticket components are closed.
+All related sub-tasks are completed with no remaining time.
+All functional test cases are passed, or conditionally passed if minor defects are present.
+There are no open defects with Major, Blocker, or Critical priority.
+If a new feature is dependent on another new feature or a bug, the deliverable feature can be marked as conditionally passed when there is a major issue that does not fail critical cases. In this situation, the deliverable new feature is considered complete and passed to the central build, with known issues listed in the release notes.
+
